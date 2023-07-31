@@ -41,7 +41,6 @@ body{
     margin-top: 3rem;
     color: #FFF;
     text-align: center;
-    /* padding: 1rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +49,6 @@ body{
 }
 
 .content h2{
-    padding: 0 1.25rem;
     font-weight: 700;
 }
 
@@ -123,7 +121,6 @@ button + p{
     font-size: .75rem;
     text-align: center;
     color: hsla(249, 10%, 26%, 0.789999);
-    
 }
 
 button + p span{
@@ -162,10 +159,7 @@ div input.error-red{
     border: 1px solid var(--grayish-blue);
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-}
+
 
 @media (min-width:1024px){
     .container{
@@ -173,17 +167,17 @@ footer{
         flex-direction: row;
         gap: 2rem;
         max-height: 50vh;
+        
     }
     .content{
         max-width: 40vw;
         text-align: left;
-        padding-left: 1.25rem;
+        justify-content: flex-start;
     }
     .content h2{
-        margin-top: 0;
-        padding-left: 0rem;
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 1.25;
+        margin-right: 20%;
     }
     #banner{
         padding: 1.25rem 0;
@@ -191,7 +185,7 @@ footer{
     .content p{
         line-height: 1.75;
         font-size: .9rem;
-        width: fit-content;
+        margin-right: 10%;
     }
     .input-details{
         max-width: 40vw;
@@ -212,4 +206,5 @@ footer{
     .error{
         font-size: .75rem;
     }
+    
 }
