@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Intro component with sign up form</title>
+  <script src="script.js" defer></script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: hsl(248, 32%, 49%);}
+    .attribution  a{ color: #fff; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="content">
+      <h2>Learn to code by watching others</h2>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="input-details">
+      <p id="banner"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      <form action="#">
+        <div>
+          <input type="text" name="" id="first-name" placeholder="First Name">
+          
+          <div class="error"></div>
+          <img src="./images/icon-error.svg" alt="" class=" show hidden">
+        </div>
+        <div>
+          <input type="text" name="" id="last-name" placeholder="Last Name">
+          
+          <div class="error"></div>
+          <img src="./images/icon-error.svg" alt="" class=" show hidden">
+          
+        </div>
+        <div>
+          <input type="email" name="" id="email-id" placeholder="Email Address">
+          
+          <div class="error"></div>
+          <img src="./images/icon-error.svg" alt="" class="  show hidden">
+          
+        </div>
+        <div>
+          
+          <input type="password" name="" id="pass" placeholder="Password">
+          
+          <div class="error"></div>
+          <img src="./images/icon-error.svg" alt="" class=" show hidden">
+          
+        </div>
+        <button type="submit">Claim your free trial </button>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        <!-- terms and conditons -->
+      </form>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+    Coded by <a href="https://github.com/PranavMangalgi?tab=repositories" target="_blank">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>

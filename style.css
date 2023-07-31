@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --red:hsl(0, 100%, 74%) ;
+    --green: hsl(154, 59%, 51%);
+    --purple:hsl(248, 32%, 49%);
+    --dark-blue:hsl(249, 10%, 26%) ;
+    --grayish-blue:hsl(246, 25%, 77%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--red);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem ;
+}
+
+.content{
+    margin: 1rem 0;
+    margin-top: 3rem;
+    color: #FFF;
+    text-align: center;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.content h2{
+    padding: 0 1.25rem;
+    font-weight: 700;
+}
+
+.content p{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.input-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#banner{
+    color: #fff;
+    text-align: center;
+    padding: 5% 20%;
+    background-color: var(--purple);
+    font-size: .9rem;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1); 
+}
+
+#banner span{
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); 
+}
+
+form input{
+    padding: 1rem ;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+}
+
+
+form input::placeholder{
+    color: hsla(249, 10%, 26%, 0.789999);
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+form button{
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 5px ;
+    font-weight: 600;
+    
+}
+
+button + p{
+    font-size: .75rem;
+    text-align: center;
+    color: hsla(249, 10%, 26%, 0.789999);
+    
+}
+
+button + p span{
+    color: var(--red);
+    font-weight: 700;
+}
+
+.error{
+    color: var(--red);
+    font-style: italic;
+    font-size: .9rem;
+    
+    text-align: right;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+form div{
+    position: relative;
+}
+div input.error-red{
+    border: 2px solid var(--red);
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.normal{
+    border: 1px solid var(--grayish-blue);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media (min-width:1024px){
+    .container{
+        width: 100%;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .content{
+        max-width: 40vw;
+        text-align: left;
+        padding-left: 1.75rem;
+    }
+    .content h2{
+        margin-top: 0;
+        padding-left: 0rem;
+        font-size: 3em;
+        line-height: 1.25;
+        
+    }
+    .content p{
+        line-height: 1.75;
+        font-size: 1.15rem;
+        width: fit-content;
+    }
+    .input-details{
+        min-width: 30vw;
+        gap: 1.5rem;
+    }
+    form{
+        padding: 3rem 2rem;
+        gap: 1.5rem;
+    }
+    button + p{
+        font-size: .9rem;
+    }
+}
