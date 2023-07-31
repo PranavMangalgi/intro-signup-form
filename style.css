@@ -63,6 +63,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    
 }
 
 #banner{
@@ -182,7 +183,6 @@ footer{
         padding-left: 0rem;
         font-size: 3em;
         line-height: 1.25;
-        
     }
     .content p{
         line-height: 1.75;
@@ -190,7 +190,7 @@ footer{
         width: fit-content;
     }
     .input-details{
-        min-width: 30vw;
+        max-width: 30vw;
         gap: 1.5rem;
     }
     form{
